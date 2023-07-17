@@ -24,9 +24,9 @@ public class Main {
         int sum = 0;
         System.out.println(Arrays.toString(arr));
 
-        for (int salarySum : arr)
+        for (int salarySum : arr) {
             sum += salarySum;
-
+        }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
 
@@ -43,8 +43,9 @@ public class Main {
             if (salary < minExpenses) {
                 minExpenses = salary;
             }
-            if (salary < maxExpenses) {
-                salary = maxExpenses;
+            if (salary > maxExpenses) {
+                maxExpenses = salary;
+
             }
         }
         System.out.println(" Минимальная сумма трат за день составила " + minExpenses + " рублей. Максимальная сумма трат за день составила " + maxExpenses + " рублей");
@@ -59,8 +60,9 @@ public class Main {
         int sum = 0;
         System.out.println(Arrays.toString(arr));
 
-        for (int salarySum : arr)
+        for (int salarySum : arr) {
             sum += salarySum;
+        }
         double salaryAverage = (double) sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила" + salaryAverage + "рублей");
     }
